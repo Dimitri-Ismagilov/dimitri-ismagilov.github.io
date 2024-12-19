@@ -143,6 +143,13 @@ main{
     height: 320px;
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    
+}
+
 footer{
     background-color: #323b4c;
     display: flex;
@@ -169,4 +176,5 @@ footer{
     height: 50px;
     width: auto;
     background-color: #323b4c;
+    color: white;
 }
