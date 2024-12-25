@@ -19,13 +19,13 @@
             <nav>
                 <input type="checkbox" id="sidebar-active">
                 <label for="sidebar-active" class="open-sidebar-btn">
-                    <img src="Images/Desing/menu.png" alt="meny" class="meny-img" height="32" width="32">
+                    <img src="Images/Desing/menu.png" alt="meny" class="meny-img" height="24" width="24">
                 </label>
 
                 <label id="overlay" for="sidebar-active"></label>
                 <div class="links-container">
                     <label for="sidebar-active" class="close-sidebar-btn">
-                        <img src="Images/Desing/x.png" alt="x-img" class="x-img" height="32" width="32">
+                        <img src="Images/Desing/x.png" alt="x-img" class="x-img" height="24" width="24">
                     </label>
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
@@ -81,27 +81,36 @@
                             <input type="email" name="email" id="email" placeholder="E-post" required>
                             <input type="text" name="add-a-topic" id="add-a-topic" placeholder="Add a topic" required>
                         </div>
-                        <input type="text" name="message" id="message" class="message" placeholder="Message Max 2000 symbols" required maxlength="2000">
+                        <textarea name="message" id="message" class="message" placeholder="Message Max 2000 symbols" required maxlength="2000" rows="13" cols="200" ></textarea>
                     </div>
                     <div class="sedn-btn">
-                        <a href="mailto:dimitri.ismagilov@ismagilov.com">Send</a>
+                        <a href="">Send</a>
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
+
     <footer>
-        <div class="side">
-            side
-        </div>
         <div class="footer-design">
-            <img src="Images/Desing/FooterImg.png" alt="footer-img" class="footer-img">
+            <div class="side">
+                side
+            </div>
+            <div class="footer-design-img">
+                <img src="Images/Desing/FooterImg.png" alt="footer-img" class="footer-img">
+            </div>
         </div>
-    </footer>
-    <div class="end">
-        <div>&copy Dimitri Ismagilov 2024</div>
-    </div>
-    
+        <div class="end">
+            <div>
+                &copy Dimitri Ismagilov 2024
+            </div>
+            <div class="links-img">
+                <a href="https://www.linkedin.com/in/dimitri-ismagilov-b05835331/"><img src="Images/Desing/linkedin.png" alt="linkedin" class="icons-img" height="24" width="24"></a>
+                <a href="https://github.com/Dimitri-Ismagilov"><img src="Images/Desing/github.png" alt="github" class="icons-img" height="24" width="24"></a>
+                <a href="mailto:dimitri.ismagilov@ismagilov.com"><img src="Images/Desing/email.png" alt="email" class="icons-img" height="24" width="24"></a>
+            </div>
+        </div>
+    </footer>    
 </body>
 </html>
