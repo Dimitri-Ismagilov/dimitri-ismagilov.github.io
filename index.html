@@ -76,16 +76,27 @@
             <div class="page">
                 <h1>Contact</h1>
                 <div class="contact-form">
-                    <div class="form">
-                        <div class="email-topic">
-                            <input type="email" name="email" id="email" placeholder="E-post" required>
-                            <input type="text" name="add-a-topic" id="add-a-topic" placeholder="Add a topic" required>
+                    <form onsubmit="return validateForm()">
+                        <div class="form">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                            <div class="error" id="email-error">
+                                <span>Please enter a valid email address</span>
+                            </div>
+
+                            <label for="topic">Topic:</label>
+                            <input type="text" name="topic" id="topic" placeholder="Add a topic">
+                            <div class="error" id="topic-error">
+                                <span>Please fill in the subject.</span>
+                            </div>
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" class="message" placeholder="Message Max 2000 symbols" maxlength="2000" rows="10" cols="200"></textarea>
+                            <div class="error" id="message-error">
+                                <span>Please write a message.</span>
+                            </div>
+                            <input type="submit" value="Send" class="send">
                         </div>
-                        <textarea name="message" id="message" class="message" placeholder="Message Max 2000 symbols" required maxlength="2000" rows="13" cols="200" ></textarea>
-                    </div>
-                    <div class="sedn-btn">
-                        <a href="">Send</a>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -102,15 +113,19 @@
             </div>
         </div>
         <div class="end">
-            <div>
-                &copy Dimitri Ismagilov 2024
-            </div>
-            <div class="links-img">
-                <a href="https://www.linkedin.com/in/dimitri-ismagilov-b05835331/"><img src="Images/Desing/linkedin.png" alt="linkedin" class="icons-img" height="24" width="24"></a>
-                <a href="https://github.com/Dimitri-Ismagilov"><img src="Images/Desing/github.png" alt="github" class="icons-img" height="24" width="24"></a>
-                <a href="mailto:dimitri.ismagilov@ismagilov.com"><img src="Images/Desing/email.png" alt="email" class="icons-img" height="24" width="24"></a>
+            <div class="end-container">
+                <div>
+                    &copy Dimitri Ismagilov 2024
+                </div>
+                <div class="links-img">
+                    <a href="https://www.linkedin.com/in/dimitri-ismagilov-b05835331/"><img src="Images/Desing/linkedin.png" alt="linkedin" class="icons-img" height="24" width="24"></a>
+                    <a href="https://github.com/Dimitri-Ismagilov"><img src="Images/Desing/github.png" alt="github" class="icons-img" height="24" width="24"></a>
+                    <a href="mailto:dimitri.ismagilov@ismagilov.com"><img src="Images/Desing/email.png" alt="email" class="icons-img" height="24" width="24"></a>
+                </div>
             </div>
         </div>
-    </footer>    
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>

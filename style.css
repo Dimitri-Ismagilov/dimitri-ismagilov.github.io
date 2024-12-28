@@ -146,17 +146,23 @@ main{
 .form{
     display: flex;
     flex-direction: column;
-    width: 200px;
-
-    .email-topic{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 20px 20px 10px 20px;
-    }
-    
+    width: 200px;  
 }
 
+.form input, form textarea{
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.error{
+    color: red;
+    display: none;
+    margin-top: 5px;
+    font-size: 12px;
+}
 
 footer{
     position: sticky;
@@ -181,6 +187,9 @@ footer{
         height: 100px;
     }
     .end{
+        height: 40px;
+    }
+    .end-container{
         display: flex;
         justify-content: space-between;
         background-color: #323b4c;
