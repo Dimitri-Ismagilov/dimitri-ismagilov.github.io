@@ -8,37 +8,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="top"></div>
     <header>
         <div class="start">
         
         </div>
-        <div class="top">
+        <div class="horizont">
             <div class="header-design">
                 <img src="Images/Desing/HeaderImg.png" alt="header-img" class="header-img">
             </div>
-            <nav>
-                <input type="checkbox" id="sidebar-active">
-                <label for="sidebar-active" class="open-sidebar-btn">
-                    <img src="Images/Desing/menu.png" alt="meny" class="meny-img" height="24" width="24">
-                </label>
-
-                <label id="overlay" for="sidebar-active"></label>
-                <div class="links-container">
-                    <label for="sidebar-active" class="close-sidebar-btn">
-                        <img src="Images/Desing/x.png" alt="x-img" class="x-img" height="24" width="24">
+            <div class="space-between"> 
+                <p id="location">Loding...</p>      
+                <p id="temp">Temp: </p>  
+                <p id="humidity">Humidity: </p>         
+            </div>
+            <div class="top">               
+                <nav>
+                    <input type="checkbox" id="sidebar-active">
+                    <label for="sidebar-active" class="open-sidebar-btn">
+                        <img src="Images/Desing/menu.png" alt="meny" class="meny-img" height="24" width="24">
                     </label>
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#knowledge">Knowledge</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </nav>
+
+                    <label id="overlay" for="sidebar-active"></label>
+                    <div class="links-container">
+                        <label for="sidebar-active" class="close-sidebar-btn">
+                            <img src="Images/Desing/x.png" alt="x-img" class="x-img" height="24" width="24">
+                        </label>
+                        <a href="#top">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#myskills">My Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <section id="home">
-            <div class="page">
+            <div class="page-first">
                 <div class="helo">
                     <div class="pictur">
                         <img src="Images/ProfileImage.jpeg" alt="pictureonme" class="pictureonme">
@@ -53,23 +61,77 @@
         </section>
         <section id="about">
             <div class="page">
+                <h1>About</h1>
                 <div class="text">
-                    <h1>About</h1>
-                    <h2> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit earum magni, eligendi temporibus vero saepe molestias ad ipsum sequi rerum quod odio minus quia. Hic alias ea est enim!</h2>
+                    <h5>Hello, my name is Dimitri Ismagilov, and I am 35 years old. 
+                        I have a great interest in technology and am currently studying to become a .NET developer at Nackademin Vocational School. 
+                        This program provides a broad and solid foundation in the IT industry, covering essential areas such as backend, frontend, databases, and much more. </h5>
+
+                    <h5>I chose this program because I am passionate about facing new challenges and constantly expanding my knowledge and skills. 
+                        I find great satisfaction in overcoming obstacles and reaching goals, even despite difficulties along the way.</h5>
+                        
+                    <h5>On a personal note, I live in Stockholm, Sweden, with my wife and our two wonderful sons, aged 6 and 4. 
+                        My main hobby outside of work is spending time with my family - whether it's going on nature trips or coaching basketball for my kids. 
+                        To me, the most important thing is that we are close and have fun together, which gives me new energy to take on life's challenges.</h5>
                 </div>
                 <div class="btn-download">
                     <a href="Docs/dIMITRI isMAGILOV.pdf">Download CV</a>
                 </div>
+                <div class="reference">
+                    <h3>Reference</h3>
+                </div>
+                <div>
+                    <h6>Electrolux colleague: Anders Andersson 0731234567</h6>
+                    <h6>Jenisl Åkeri Ab chef: Sven Svensson 0709876543</h6>
+                </div>                
             </div>
         </section>
-        <section id="knowledge">
+        <section id="myskills">
             <div class="page">
-                <h1>Knowledge</h1>
+                <h1>My Skills</h1>
+                <div class="skills">
+                    <div class="skills-done">
+                        <h2>Known</h2>
+                        <h5>C#</h5>
+                        <h5>ADO.NET</h5>
+                        <h5>SQL</h5>
+                        <h5>HTML</h5>
+                        <h5>CSS</h5>
+                        <h5>JavaScript</h5>
+
+                    </div>
+                    <div class="skills-in-progress">
+                        <h2>Learning</h2>
+                        <h5>ASP.NET</h5>
+                        <h5>UML</h5>
+                        <h5>SPA</h5>
+                        <h5>AJAX</h5>
+                        <h5>Automation</h5>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="projects">
             <div class="page">
                 <h1>Projects</h1>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                            <img id="slider1" src="Images/Projects/Adressbok.png" alt="adressbok" class="slider-img" rel="noreferrer" target="_blank">
+                            <img id="slider2" src="Images/Projects/Shotgun.png" alt="shotgun" class="slider-img">
+                            <img id="slider3" src="Images/Projects/InternationalFoodAB.png" alt="international-food-AB" class="slider-img">
+                            <img id="slider4" src="Images/Projects/AnnonsDatabas.png" alt="annons-databas" class="slider-img">
+                            <img id="slider5" src="Images/Projects/HederligaHarry.png" alt="hederliga-harry" class="slider-img">
+                            <img id="slider6" src="Images/Projects/Portfolio.png" alt="portfolio" class="slider-img">
+                    </div>                   
+                </div>
+                <div class="slider-nav">
+                    <a href="#slider1"></a>
+                    <a href="#slider2"></a>
+                    <a href="#slider3"></a>
+                    <a href="#slider4"></a>
+                    <a href="#slider5"></a>
+                    <a href="#slider6"></a>
+                </div>
             </div>
         </section>
         <section id="contact">
@@ -106,7 +168,6 @@
     <footer>
         <div class="footer-design">
             <div class="side">
-                side
             </div>
             <div class="footer-design-img">
                 <img src="Images/Desing/FooterImg.png" alt="footer-img" class="footer-img">
