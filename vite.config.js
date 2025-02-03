@@ -4,5 +4,5 @@ export default {
     build: {
         outDir: 'dist',
     },
-    base: "/PORTFOLIO",
+    base: "/PORTFOLIO/",
 };
