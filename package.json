@@ -3,6 +3,8 @@
     "vite": "^6.0.11"
   },
   
+  "homepage": "https://aspcodenet.github.io/tsdemo2/",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
